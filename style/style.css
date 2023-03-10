@@ -12,35 +12,49 @@ body {
 
 .container {
     margin: 2% auto;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 90%;
     display: grid;
     grid-template-areas:
     "header header header header"
     "content content sidebar1 sidebar1"
     "content content sidebar2 sidebar2";
-    grid-gap: 1%;
+    grid-gap:.5rem;
+
 
     
 }
 
 .item {
-    border: 3px blue solid;
     grid-gap: 2px;
+    grid-column: 1fr;
     overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 
 }
 
-.item img {
-    width: 100%;
-    height: auto;
+img:hover {
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .item1 {
     grid-area: header;
     height: auto;
+    
     
 }
 
