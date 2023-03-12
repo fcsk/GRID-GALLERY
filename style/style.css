@@ -3,12 +3,17 @@
     box-sizing: border-box;
     margin: 0;
     font-size: 20px;
+    list-style-type: none;
 }
 
 body {
     background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
     display: grid;
 
+}
+
+.logo {
+    
 }
 
 .container {
